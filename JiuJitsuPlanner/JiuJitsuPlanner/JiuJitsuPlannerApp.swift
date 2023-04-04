@@ -5,11 +5,11 @@
 //  Created by 장예지 on 2023/02/01.
 //
 
+import UIKit
 import SwiftUI
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
-
 
 @main
 struct JiuJitsuPlannerApp: App {
@@ -19,7 +19,7 @@ struct JiuJitsuPlannerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
@@ -29,4 +29,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     FirebaseApp.configure()
     return true
   }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }

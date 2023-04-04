@@ -12,7 +12,31 @@
 		B81B007C298A06DA00E677D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B007B298A06DA00E677D3 /* ContentView.swift */; };
 		B81B007E298A06DB00E677D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B007D298A06DB00E677D3 /* Assets.xcassets */; };
 		B81B0081298A06DB00E677D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */; };
+		B82D620529BB09F0001F3158 /* AnimationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620429BB09F0001F3158 /* AnimationSource.swift */; };
+		B82D620729BB0C90001F3158 /* UserInfoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620629BB0C90001F3158 /* UserInfoStatus.swift */; };
+		B83146EA299356E10072BB3D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146E9299356E10072BB3D /* ButtonView.swift */; };
+		B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146ED29935F180072BB3D /* TextFieldView.swift */; };
+		B83146F0299366210072BB3D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146EF299366210072BB3D /* UserInfo.swift */; };
+		B83146F2299371F20072BB3D /* PasswordTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */; };
+		B83147062999F81F0072BB3D /* BaseSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83147052999F81F0072BB3D /* BaseSignUpView.swift */; };
+		B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83147082999FAAF0072BB3D /* SignUpIdView.swift */; };
+		B831470B2999FF7C0072BB3D /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */; };
+		B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470C299A02100072BB3D /* SignUpUserInfoView.swift */; };
 		B83C955F298A4CFF001113EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83C955E298A4CFF001113EF /* GoogleService-Info.plist */; };
+		B862841429C04F5800B082AA /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862841329C04F5800B082AA /* FirebaseStorageManager.swift */; };
+		B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862841729C17EFA00B082AA /* ConfettiView.swift */; };
+		B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B80403299C74E8005AF13F /* PhotoPicker.swift */; };
+		B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F33298CEC770074DCA1 /* LoginView.swift */; };
+		B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F35299126B60074DCA1 /* SignUpView.swift */; };
+		B8C2DD5F29A8889500FDF9F5 /* BeltUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */; };
+		B8C2DD6129A888BC00FDF9F5 /* Belt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6029A888BC00FDF9F5 /* Belt.swift */; };
+		B8C2DD6329ADE80B00FDF9F5 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */; };
+		B8C2DD6529B1F26200FDF9F5 /* SignUpCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */; };
+		B8C2DD6729B866EB00FDF9F5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */; };
+		B8C6F8CE29D5837B007358A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C6F8CD29D5837B007358A3 /* LoadingView.swift */; };
+		B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */; };
+		B8E5E06129A4D09F00C40B99 /* DefaultAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */; };
+		B8E5E06629A74DD300C40B99 /* BeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E06529A74DD300C40B99 /* BeltView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +47,31 @@
 		B81B007B298A06DA00E677D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B81B007D298A06DB00E677D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B82D620429BB09F0001F3158 /* AnimationSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSource.swift; sourceTree = "<group>"; };
+		B82D620629BB0C90001F3158 /* UserInfoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStatus.swift; sourceTree = "<group>"; };
+		B83146E9299356E10072BB3D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B83146ED29935F180072BB3D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B83146EF299366210072BB3D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldView.swift; sourceTree = "<group>"; };
+		B83147052999F81F0072BB3D /* BaseSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpView.swift; sourceTree = "<group>"; };
+		B83147082999FAAF0072BB3D /* SignUpIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIdView.swift; sourceTree = "<group>"; };
+		B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
+		B831470C299A02100072BB3D /* SignUpUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserInfoView.swift; sourceTree = "<group>"; };
 		B83C955E298A4CFF001113EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B862841329C04F5800B082AA /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		B862841729C17EFA00B082AA /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		B8B80403299C74E8005AF13F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		B8BB5F33298CEC770074DCA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B8BB5F35299126B60074DCA1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltUIController.swift; sourceTree = "<group>"; };
+		B8C2DD6029A888BC00FDF9F5 /* Belt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belt.swift; sourceTree = "<group>"; };
+		B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompleteView.swift; sourceTree = "<group>"; };
+		B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B8C6F8CD29D5837B007358A3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltOptionButton.swift; sourceTree = "<group>"; };
+		B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertView.swift; sourceTree = "<group>"; };
+		B8E5E06529A74DD300C40B99 /* BeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltView.swift; sourceTree = "<group>"; };
 		CFA16D1F093929F02381431E /* Pods-JiuJitsuPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiuJitsuPlanner.debug.xcconfig"; path = "Target Support Files/Pods-JiuJitsuPlanner/Pods-JiuJitsuPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +117,10 @@
 		B81B0078298A06DA00E677D3 /* JiuJitsuPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				B83146F3299387F80072BB3D /* Service */,
+				B83146E329924BB80072BB3D /* Model */,
+				B83146E229924BAB0072BB3D /* ViewModel */,
+				B8BB5F32298CEC5D0074DCA1 /* View */,
 				B81B0079298A06DA00E677D3 /* JiuJitsuPlannerApp.swift */,
 				B81B007B298A06DA00E677D3 /* ContentView.swift */,
 				B83C955E298A4CFF001113EF /* GoogleService-Info.plist */,
@@ -84,6 +136,74 @@
 				B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B83146E229924BAB0072BB3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */,
+				B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B83146E329924BB80072BB3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B83146EF299366210072BB3D /* UserInfo.swift */,
+				B8C2DD6029A888BC00FDF9F5 /* Belt.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B83146E6299251CB0072BB3D /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				B83146E9299356E10072BB3D /* ButtonView.swift */,
+				B83146ED29935F180072BB3D /* TextFieldView.swift */,
+				B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */,
+				B83147052999F81F0072BB3D /* BaseSignUpView.swift */,
+				B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */,
+				B8E5E06529A74DD300C40B99 /* BeltView.swift */,
+				B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */,
+				B8C6F8CD29D5837B007358A3 /* LoadingView.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		B83146F3299387F80072BB3D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B82D620629BB0C90001F3158 /* UserInfoStatus.swift */,
+				B8B80403299C74E8005AF13F /* PhotoPicker.swift */,
+				B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */,
+				B82D620429BB09F0001F3158 /* AnimationSource.swift */,
+				B862841329C04F5800B082AA /* FirebaseStorageManager.swift */,
+				B862841729C17EFA00B082AA /* ConfettiView.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83147072999F9B40072BB3D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B8BB5F35299126B60074DCA1 /* SignUpView.swift */,
+				B83147082999FAAF0072BB3D /* SignUpIdView.swift */,
+				B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */,
+				B831470C299A02100072BB3D /* SignUpUserInfoView.swift */,
+				B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B8BB5F32298CEC5D0074DCA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B83146E6299251CB0072BB3D /* ViewModifier */,
+				B83147072999F9B40072BB3D /* SignUp */,
+				B8BB5F33298CEC770074DCA1 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FAFBDFED6557C8BD74C544A8 /* Frameworks */ = {
@@ -138,6 +258,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = B81B006D298A06DA00E677D3;
 			productRefGroup = B81B0077298A06DA00E677D3 /* Products */;
@@ -209,7 +330,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */,
+				B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */,
+				B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */,
+				B8E5E06129A4D09F00C40B99 /* DefaultAlertView.swift in Sources */,
+				B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */,
+				B8C2DD5F29A8889500FDF9F5 /* BeltUIController.swift in Sources */,
+				B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */,
+				B83146EA299356E10072BB3D /* ButtonView.swift in Sources */,
+				B831470B2999FF7C0072BB3D /* SignUpPasswordView.swift in Sources */,
+				B8E5E06629A74DD300C40B99 /* BeltView.swift in Sources */,
+				B83146F0299366210072BB3D /* UserInfo.swift in Sources */,
+				B8C6F8CE29D5837B007358A3 /* LoadingView.swift in Sources */,
+				B8C2DD6729B866EB00FDF9F5 /* SignUpViewModel.swift in Sources */,
+				B82D620729BB0C90001F3158 /* UserInfoStatus.swift in Sources */,
+				B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */,
+				B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */,
 				B81B007C298A06DA00E677D3 /* ContentView.swift in Sources */,
+				B862841429C04F5800B082AA /* FirebaseStorageManager.swift in Sources */,
+				B82D620529BB09F0001F3158 /* AnimationSource.swift in Sources */,
+				B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */,
+				B83147062999F81F0072BB3D /* BaseSignUpView.swift in Sources */,
+				B8C2DD6329ADE80B00FDF9F5 /* AlertType.swift in Sources */,
+				B8C2DD6529B1F26200FDF9F5 /* SignUpCompleteView.swift in Sources */,
+				B83146F2299371F20072BB3D /* PasswordTextFieldView.swift in Sources */,
+				B8C2DD6129A888BC00FDF9F5 /* Belt.swift in Sources */,
 				B81B007A298A06DA00E677D3 /* JiuJitsuPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +412,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +467,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,11 +489,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JiuJitsuPlanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JiuJitsuPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,11 +520,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JiuJitsuPlanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JiuJitsuPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
