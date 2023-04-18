@@ -12,6 +12,10 @@ import PhotosUI
 
 struct SignUpUserInfoView: View {
     
+    enum Field: Hashable {
+        case nickname, birthday
+    }
+    
     @EnvironmentObject var viewModel: SignUpViewModel
     
     @State var isPresented: Bool = false
@@ -20,6 +24,7 @@ struct SignUpUserInfoView: View {
     @State private var isShowPhotoLibrary = false
     @State var attempts: Int = 1
     
+    @FocusState private var focusField: Field?
     @FocusState var nickNameFocused: Bool
     @FocusState var birthdayFocused: Bool
     
@@ -44,7 +49,7 @@ struct SignUpUserInfoView: View {
                     VStack {
                         //프로필 이미지
                         ZStack {
-                            if let image = viewModel.img {
+                            if let image = viewModel.image {
                                 Image(uiImage: image)
                                     .resizable()
                                     .frame(width: 150, height: 150)
@@ -63,27 +68,28 @@ struct SignUpUserInfoView: View {
                         )
                     }
                     .sheet(isPresented: $isShowPhotoLibrary) {
-                        PhotoPicker(isPresented: $isShowPhotoLibrary, selectedImage: $viewModel.img)
+                        PhotoPicker(isPresented: $isShowPhotoLibrary, selectedImage: $viewModel.image)
                     }
                     
                     //닉네임
                     VStack{
                         HStack{
                             Text("별명")
-                            TextField("", text: $viewModel.nickname)
+                            TextField("3-6자 내외의 글자,이모티콘", text: $viewModel.nickname)
                                 .multilineTextAlignment(.trailing)
-                                .focused($nickNameFocused)
+                                .focused($focusField,equals: .nickname)
                             
                         }
                         Divider()
                         
-                        
-                        Text(viewModel.validateNickname())
+                    
+                        Text(focusField == .nickname ? viewModel.nicknameIsAvailableNotifyMessage : "")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .foregroundColor(Color.red)
                             .padding(.horizontal)
                             .font(.system(size: 15))
                             .modifier(Shake(animatableData: CGFloat(attempts)))
+                    
                         
                     }
                     .padding(.horizontal)
@@ -94,12 +100,12 @@ struct SignUpUserInfoView: View {
                             Text("생년월일")
                             TextField("yyyymmdd", text: $viewModel.birthday)
                                 .multilineTextAlignment(.trailing)
-                                .focused($birthdayFocused)
+                                .focused($focusField,equals: .birthday)
                                 .keyboardType(.numberPad)
                         }
                         Divider()
                         
-                        Text(viewModel.validateBirthday().description)
+                        Text(focusField == .birthday ? viewModel.birthdayIsAvailableNotifyMessage : "")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .foregroundColor(Color.red)
                             .padding(.horizontal)
@@ -110,16 +116,16 @@ struct SignUpUserInfoView: View {
                     
                     //벨트 정보
                     BeltView()
-                        .environmentObject(viewModel)
+                        .environmentObject(viewModel.beltController)
                 }
                 
                 VStack {
                     ButtonView(title: "확인") {
                         if !viewModel.isNicknameValid || !viewModel.isBirthdayValid{
                             if !viewModel.isBirthdayValid {
-                                nickNameFocused = true
+                                focusField = .nickname
                             } else {
-                                birthdayFocused = true
+                                focusField = .birthday
                             }
                             withAnimation(.easeInOut(duration: 0.5)){
                                 attempts += 1
@@ -142,8 +148,7 @@ struct SignUpUserInfoView: View {
                alert:
                 DefaultAlertView( alertType: .custom(title: "확인", message: "회원가입을 완료하시겠습니까?", image: "person.fill.checkmark")){
             ButtonView(title: "확인") {
-                nickNameFocused = false
-                birthdayFocused = false
+                focusField = nil
                 
                 isReadyLoadingView = true
                 isPresented = false

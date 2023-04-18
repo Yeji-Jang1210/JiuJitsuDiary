@@ -9,22 +9,21 @@ import SwiftUI
 
 struct BeltOptionButton: View {
     
-    @EnvironmentObject var viewModel: SignUpViewModel
+    @EnvironmentObject var controller: BeltUIController
     @State var color: Color
     @State var type: BeltType
     
     var body: some View {
         Button {
-            self.viewModel.beltInfo.color = color
-            self.viewModel.beltInfo.type = type
-            viewModel.changeToBlackBeltOption()
+            controller.belt.color = color
+            controller.belt.type = type
         } label: {
             Circle()
                 .fill(color)
                 .shadow(color: Color.black.opacity(0.2), radius: 3, x: 4, y: 4)
                 .overlay(
                     GeometryReader { circle in
-                        if viewModel.beltInfo.color == color && viewModel.beltInfo.type == type {
+                        if controller.belt.color == color && controller.belt.type == type {
                             Image(systemName: "checkmark")
                                 .resizable()
                                 .scaledToFit()
@@ -41,20 +40,23 @@ struct BeltOptionButton: View {
 
 struct BeltOptionButton_Previews: PreviewProvider {
     
+    @State static var controller = BeltUIController()
+    
     static var previews: some View {
         VStack{
             BeltOptionButton(color: .white, type: BeltType.Adult)
                 .frame(width: 80, height: 80)
             
-            BeltOptionButton(color: .white, type: BeltType.Youth)
+            BeltOptionButton(color: .purple, type: BeltType.Youth)
                 .frame(width: 80, height: 80)
                 
             BeltOptionButton(color: .brown, type: BeltType.Adult)
                 .frame(width: 140, height: 140)
-                
+            
+            Text("\(controller.belt.color.description)")
+            Text("\(controller.belt.type.rawValue)")
         }
-        .environmentObject(SignUpViewModel())
+        .environmentObject(BeltUIController())
         .previewLayout(.sizeThatFits)
-        
     }
 }

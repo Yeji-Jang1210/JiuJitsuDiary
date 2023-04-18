@@ -9,8 +9,6 @@ import SwiftUI
 
 struct DefaultAlertView: View{
 
-    //@Binding var isPresent: Bool
-    //@State var isShow: Bool = false
     @State var isShow = false
     @Environment(\.presentationMode) var presentation
     

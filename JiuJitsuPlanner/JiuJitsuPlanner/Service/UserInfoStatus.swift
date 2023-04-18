@@ -46,7 +46,7 @@ enum PasswordStatus {
     }
 }
 
-enum IdStatus {
+enum EmailStatus {
     case EmptyEmail
     case IncorrectEmail
     case NotValidateEmail
@@ -56,7 +56,7 @@ enum IdStatus {
     var message: String {
         switch self {
         case .EmptyEmail:
-            return "⚠️ 아이디를 입력해 주세요."
+            return "⚠️ 이메일을 입력해 주세요."
         case .IncorrectEmail:
             return "⚠️ 잘못된 이메일 형식 입니다."
         case .DuplicateEmail:

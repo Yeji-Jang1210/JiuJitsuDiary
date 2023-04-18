@@ -9,19 +9,13 @@ import SwiftUI
 
 struct BeltView: View {
     
-    @EnvironmentObject var viewModel: SignUpViewModel
+    @EnvironmentObject var controller: BeltUIController
+    
     @State var rows: [GridItem] = Array(repeating: .init(.fixed(60)), count: 1)
     @State var isSliderEdited: Bool = false
     @State var isBlack = false
     
-    
-    
     var body: some View {
-        
-        let beltTypes = [
-            BeltType.Adult: [Color.white, Color.blue, Color.purple, Color.brown, Color.black],
-            BeltType.Youth: [Color.white, Color.gray, Color.yellow, Color.orange, Color.green]
-        ]
         
         VStack{
             
@@ -30,19 +24,20 @@ struct BeltView: View {
                 Text("벨트")
                 BeltUI()
             }
+            .environmentObject(controller)
             
             //벨트 색상 버튼
             VStack(spacing: 40){
-                ForEach(Array(beltTypes.keys.sorted{ $0.rawValue < $1.rawValue }), id: \.self){ key in
+                ForEach(Array(controller.beltTypes.keys.sorted{ $0.rawValue < $1.rawValue }), id: \.self){ key in
                     VStack(spacing: 20){
                         Text("\(key.rawValue)")
                             .font(.system(size: 15))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         LazyHGrid(rows: rows, spacing: .minimum(25, 25)){
-                            ForEach(beltTypes[key]!, id: \.self){ color in
-                                VStack{
+                            ForEach(controller.beltTypes[key]!, id: \.self){ color in
+                                VStack {
                                     BeltOptionButton(color: color, type: key)
-                                        .environmentObject(viewModel)
+                                        .environmentObject(controller)
                                     Text("\(color.description)")
                                 }
                             }
@@ -57,33 +52,32 @@ struct BeltView: View {
             
             //그랄 슬라이더
             VStack(alignment: .leading){
-                Text("그랄: \(String(format: "%.f", viewModel.beltInfo.graus))")
+                Text("그랄: \(String(format: "%.f", controller.belt.graus))")
                 
                 VStack{
-                    Slider(value: $viewModel.beltInfo.graus, in: 0...viewModel.maxGraus, step: 1.0) {
+                    Slider(value: $controller.belt.graus, in: 0...controller.maxGraus, step: 1.0) {
                         Text("")
                     } minimumValueLabel: {
                         Text("0")
                     } maximumValueLabel: {
-                        Text("\(String(format: "%.f", viewModel.maxGraus))")
+                        Text("\(String(format: "%.f", controller.maxGraus))")
                     }
                 }
             }
         }
-        .environmentObject(viewModel)
         .padding(.horizontal)
     }
 }
 
 struct BeltUI: View {
     
-    @EnvironmentObject var viewModel: SignUpViewModel
+    @EnvironmentObject var controller: BeltUIController
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(viewModel.beltInfo.color)
-                .animation(Animation.default, value: viewModel.beltInfo.color)
+                .fill(controller.belt.color)
+                .animation(Animation.default, value: controller.belt.color)
                 .frame(height: 30)
                 .padding()
             
@@ -92,18 +86,21 @@ struct BeltUI: View {
                 
                 ZStack{
                     Rectangle()
-                        .animation(Animation.default, value: viewModel.pretaWidth)
-                        .frame(width: viewModel.pretaWidth, height: 30)
-                        .foregroundColor(viewModel.pretaColor)
+                        .animation(Animation.default, value: controller.pretaWidth)
+                        .frame(width: controller.pretaWidth, height: 30)
+                        .foregroundColor(controller.pretaColor)
+                        .onChange(of: controller.belt.color) { newValue in
+                            controller.changeToBlackBeltOption(color: newValue)
+                        }
                     
                     HStack{
                         Spacer()
                         
-                        ForEach(0..<Int(viewModel.beltInfo.graus), id: \.self){ count in
+                        ForEach(0..<Int(controller.belt.graus), id: \.self){ count in
                             Rectangle()
                                 .frame(width: 5, height: 30)
                                 .foregroundColor(.white)
-                                .animation(Animation.default, value: viewModel.beltInfo.graus)
+                                .animation(Animation.default, value: controller.belt.graus)
                         }
                     }
                     .padding(.trailing, 8)
@@ -119,7 +116,7 @@ struct BeltUI: View {
 struct BeltView_Previews: PreviewProvider {
     static var previews: some View {
         BeltView()
-            .environmentObject(SignUpViewModel())
+            .environmentObject(BeltUIController())
             .previewLayout(.sizeThatFits)
             
     }

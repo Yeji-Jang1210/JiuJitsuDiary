@@ -10,7 +10,6 @@ import SwiftUI
 struct SignUpIdView: View {
     
     @EnvironmentObject var viewModel: SignUpViewModel
-    //@StateObject var viewModel: SignUpViewModel = SignUpViewModel()
     @FocusState var idFieldFocused: Bool
     
     @State var isPresentAlert: Bool = false
@@ -18,37 +17,34 @@ struct SignUpIdView: View {
     
     @ViewBuilder
     var body: some View {
-        BaseSignUpView(title: "사용할 아이디를 입력해주세요.",
-                       discription: "아이디는 이메일 형식으로 가능하며, \n한번 지정한 아이디는 변경할 수 없습니다.") {
+        BaseSignUpView(title: "사용할 이메일을 입력해주세요.",
+                       discription: "한번 지정한 아이디는 변경할 수 없습니다.") {
             
             VStack(alignment: .trailing){
                 
                 HStack {
-                    TextFieldView(placeholder: "아이디 입력해 주세요.", imgName: nil, fontSize: 18, keyboardType: .emailAddress, text: $viewModel.id)
+                    TextFieldView(placeholder: "이메일을 입력해 주세요.", imgName: nil, fontSize: 18, keyboardType: .emailAddress, text: $viewModel.email)
                         .focused($idFieldFocused)
                         .submitLabel(.done)
                         .keyboardType(.emailAddress)
                         .frame(width: UIScreen.main.bounds.width * 0.6)
-                        .disabled(viewModel.idStatus == IdStatus.CorrectEmail)
+                        .disabled(viewModel.emailStatus == EmailStatus.CorrectEmail)
                     
                     Button {
-                        viewModel.checkDuplicatedId()
+                        viewModel.checkDuplicatedEmail()
                     } label: {
                         Text("중복확인")
                             .font(.system(size: 15))
                             .foregroundColor(.white)
                             .padding()
-                            .background(viewModel.idStatus.disabledDuplicationButton ? .gray : .black)
+                            .background(viewModel.emailStatus.disabledDuplicationButton ? .gray : .black)
                             .cornerRadius(10)
                     }
-                    .disabled(viewModel.idStatus.disabledDuplicationButton)
-                }
-                .task(id: viewModel.id) {
-                    viewModel.setIdStatus()
+                    .disabled(viewModel.emailStatus.disabledDuplicationButton)
                 }
                 
-                Text("\(viewModel.idStatus.message)")
-                    .foregroundColor(viewModel.idStatus.messageColor)
+                Text("\(viewModel.emailStatus.message)")
+                    .foregroundColor(viewModel.emailStatus.messageColor)
                     .font(.system(size: 15))
                     .padding(.vertical)
                     .modifier(Shake(animatableData: CGFloat(attempts)))
@@ -59,7 +55,7 @@ struct SignUpIdView: View {
             
             ButtonView(title: "확인") {
                 withAnimation(.easeInOut(duration: 0.5)){
-                    if viewModel.idStatus == IdStatus.CorrectEmail {
+                    if viewModel.emailStatus == EmailStatus.CorrectEmail {
                         if idFieldFocused {
                             idFieldFocused = false
                         }
@@ -70,7 +66,7 @@ struct SignUpIdView: View {
                         }
                     }
                     else {
-                        if viewModel.id.isEmpty{
+                        if viewModel.emailStatus == .EmptyEmail {
                             isPresentAlert = true
                         } 
                         else {

@@ -10,8 +10,6 @@ import SwiftUI
 struct SignUpPasswordView: View {
     
     @EnvironmentObject var viewModel: SignUpViewModel
-    
-    @State var pwdIsChecked: Bool = false
     @State var attempts: Int = 1
     
     @FocusState var pwdFieldFocused: Bool
@@ -26,15 +24,15 @@ struct SignUpPasswordView: View {
                 Spacer()
                 
                 VStack{
-                    PasswordTextFieldView(placeholder: "패스워드를 입력해 주세요.", useImg: false, fontSize: 20, pwd: $viewModel.pwd)
+                    PasswordTextFieldView(placeholder: "패스워드를 입력해 주세요.", useImg: false, fontSize: 20, pwd: $viewModel.password)
                         .onSubmit {
                             pwdCheckedFieldFocused = true
                         }
                         .focused($pwdFieldFocused)
                         .submitLabel(.next)
                     
-                    if !viewModel.validateUsablePwd(){
-                        if viewModel.pwd.count >= 1 {
+                    if !viewModel.isPasswordAvailable {
+                        if viewModel.password.count >= 1 {
                             Text("⚠️ 잘못된 비밀번호 형식입니다.")
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                                 .foregroundColor(Color.red)
@@ -52,11 +50,11 @@ struct SignUpPasswordView: View {
                 }
                 
                 VStack {
-                    PasswordTextFieldView(placeholder: "패스워드를 다시 입력해 주세요.", useImg: false, fontSize: 20, pwd: $viewModel.pwdChecked)
+                    PasswordTextFieldView(placeholder: "패스워드를 다시 입력해 주세요.", useImg: false, fontSize: 20, pwd: $viewModel.passwordChecked)
                         .focused($pwdCheckedFieldFocused)
                         .submitLabel(.done)
                     
-                    if viewModel.isPasswordCorrect(){
+                    if viewModel.passwordStatus != .WrongPassword {
                         Text("\(viewModel.passwordStatus.errorMessage)")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .foregroundColor(Color.red)
@@ -64,6 +62,7 @@ struct SignUpPasswordView: View {
                             .font(.system(size: 15))
                             .modifier(Shake(animatableData: CGFloat(attempts)))
                     }
+                    
                 }
                 
                 Spacer()
@@ -85,7 +84,6 @@ struct SignUpPasswordView: View {
                             viewModel.onboardingState = 0
                             pwdFieldFocused = false
                             pwdCheckedFieldFocused = false
-                            pwdIsChecked.toggle()
                         }
                     }
                 }
@@ -101,7 +99,7 @@ extension SignUpPasswordView {
                 pwdFieldFocused = true
                 pwdCheckedFieldFocused = false
             case .EmptyRecheckedPassword:
-                if !viewModel.isPwdValid{
+                if !viewModel.isPasswordAvailable {
                     pwdFieldFocused = true
                     pwdCheckedFieldFocused = false
                 }

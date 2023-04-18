@@ -6,18 +6,26 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 import UIKit
 
-struct UserInfo {
-    var userId: String = ""
-    var userPwd: String = ""
-    var userImg: UIImage?
-    var userNickname: String = ""
-    var userBirthday: String = ""
-    var userBeltInfo: Belt = Belt()
+struct UserInfo{
+
+    var userUid: String = ""
+    var id: String = ""
+    var password: String = ""
+    var profile: UIImage?
+    var nickname: String = ""
+    var birthday: String = ""
+    var belfInfo: Belt = Belt()
+    var isCurrentUser: Bool {
+            return Auth.auth().currentUser?.uid == userUid
+        }
     
     init(){
-        self.userBirthday = convertDateToString(date: Date.now)
+        self.birthday = convertDateToString(date: Date.now)
     }
     
     func convertDateToString(date: Date) -> String{
