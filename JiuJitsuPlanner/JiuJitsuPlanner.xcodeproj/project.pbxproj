@@ -14,6 +14,7 @@
 		B81B0081298A06DB00E677D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */; };
 		B82D620529BB09F0001F3158 /* AnimationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620429BB09F0001F3158 /* AnimationSource.swift */; };
 		B82D620729BB0C90001F3158 /* UserInfoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620629BB0C90001F3158 /* UserInfoStatus.swift */; };
+		B82E688029EE864600C2A2AA /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E687F29EE864600C2A2AA /* FirebaseAuthManager.swift */; };
 		B83146EA299356E10072BB3D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146E9299356E10072BB3D /* ButtonView.swift */; };
 		B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146ED29935F180072BB3D /* TextFieldView.swift */; };
 		B83146F0299366210072BB3D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146EF299366210072BB3D /* UserInfo.swift */; };
@@ -24,6 +25,7 @@
 		B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470C299A02100072BB3D /* SignUpUserInfoView.swift */; };
 		B83C955F298A4CFF001113EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83C955E298A4CFF001113EF /* GoogleService-Info.plist */; };
 		B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862841729C17EFA00B082AA /* ConfettiView.swift */; };
+		B8B67EBC29DC1AB50009272F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */; };
 		B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B80403299C74E8005AF13F /* PhotoPicker.swift */; };
 		B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F33298CEC770074DCA1 /* LoginView.swift */; };
 		B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F35299126B60074DCA1 /* SignUpView.swift */; };
@@ -48,6 +50,7 @@
 		B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B82D620429BB09F0001F3158 /* AnimationSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSource.swift; sourceTree = "<group>"; };
 		B82D620629BB0C90001F3158 /* UserInfoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStatus.swift; sourceTree = "<group>"; };
+		B82E687F29EE864600C2A2AA /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		B83146E9299356E10072BB3D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B83146ED29935F180072BB3D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		B83146EF299366210072BB3D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		B831470C299A02100072BB3D /* SignUpUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserInfoView.swift; sourceTree = "<group>"; };
 		B83C955E298A4CFF001113EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B862841729C17EFA00B082AA /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		B8B80403299C74E8005AF13F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		B8BB5F33298CEC770074DCA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B8BB5F35299126B60074DCA1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		B8269B7F29E012D200F625DB /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				B82E687F29EE864600C2A2AA /* FirebaseAuthManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */,
 				B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */,
+				B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,9 +207,17 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		B8B67EBD29DC4DF40009272F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		B8BB5F32298CEC5D0074DCA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8B67EBD29DC4DF40009272F /* MainView */,
 				B83146E6299251CB0072BB3D /* ViewModifier */,
 				B83147072999F9B40072BB3D /* SignUp */,
 				B8BB5F33298CEC770074DCA1 /* LoginView.swift */,
@@ -338,12 +352,14 @@
 				B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */,
 				B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */,
 				B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */,
+				B82E688029EE864600C2A2AA /* FirebaseAuthManager.swift in Sources */,
 				B8E5E06129A4D09F00C40B99 /* DefaultAlertView.swift in Sources */,
 				B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */,
 				B8C2DD5F29A8889500FDF9F5 /* BeltUIController.swift in Sources */,
 				B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */,
 				B83146EA299356E10072BB3D /* ButtonView.swift in Sources */,
 				B831470B2999FF7C0072BB3D /* SignUpPasswordView.swift in Sources */,
+				B8B67EBC29DC1AB50009272F /* AuthViewModel.swift in Sources */,
 				B8E5E06629A74DD300C40B99 /* BeltView.swift in Sources */,
 				B83146F0299366210072BB3D /* UserInfo.swift in Sources */,
 				B8C6F8CE29D5837B007358A3 /* LoadingView.swift in Sources */,

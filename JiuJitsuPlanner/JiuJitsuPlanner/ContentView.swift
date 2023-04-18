@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View{
-        Text("Hello world")
+    
+    @State var viewModel: AuthViewModel = AuthViewModel()
+    
+    var body: some View {
+        if let user = viewModel.currentUser {
+            Text("Hello \(user.uid)")
+        } else {
+            LoginView()
+                .environmentObject(viewModel)
+        }
     }
 }
 

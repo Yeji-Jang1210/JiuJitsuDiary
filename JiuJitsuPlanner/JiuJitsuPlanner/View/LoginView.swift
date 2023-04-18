@@ -9,10 +9,14 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @StateObject var viewModel: AuthViewModel = AuthViewModel()
+    
     @State var id: String = ""
     @State var pwd: String = ""
     @State var isShowPassword: Bool = false
     @State var isJoinViewPresented: Bool = false
+    
+    @State var errorAlertView: DefaultAlertView?
     
     @FocusState var isIdFocused: Bool
     @FocusState var isPwdFocused: Bool
@@ -39,31 +43,41 @@ struct LoginView: View {
                         .fontWeight(.heavy)
                 }
                 
-                //Spacer()
+                Spacer()
                 
                 //로그인 텍스트필드
-                VStack(alignment: .trailing, spacing: 30){
+                VStack(alignment: .trailing, spacing: 20){
+                    VStack(alignment: .trailing, spacing: 30){
+                        
+                        //아이디 텍스트필드
+                        TextFieldView(placeholder: "아이디를 입력해 주세요.", imgName: "person.fill", fontSize: 18, keyboardType: .emailAddress, text: $viewModel.email)
+                            .focused($isIdFocused)
+                            .submitLabel(.next)
+                            .onSubmit {
+                                isPwdFocused = true
+                            }
+                        
+                        //비밀번호 텍스트필드
+                        PasswordTextFieldView(placeholder: "비밀번호를 입력해 주세요.", useImg: true, fontSize: 18, pwd: $viewModel.password)
+                            .submitLabel(.done)
+                            .focused($isPwdFocused)
+                    }
+
+                    Button {
+                        //비밀번호 찾는 sheet
+                        
+                    } label: {
+                        Text("비밀번호를 잊으셨나요?")
+                    }.padding(.horizontal)
                     
-                    //아이디 텍스트필드
-                    TextFieldView(placeholder: "아이디를 입력해 주세요.", imgName: "person.fill", fontSize: 18, keyboardType: .emailAddress, text: $id)
-                        .focused($isIdFocused)
-                        .submitLabel(.next)
-                        .onSubmit {
-                            isPwdFocused = true
-                        }
-                    
-                    //비밀번호 텍스트필드
-                    PasswordTextFieldView(placeholder: "비밀번호를 입력해 주세요.", useImg: true, fontSize: 18, pwd: $pwd)
-                        .submitLabel(.done)
-                        .focused($isPwdFocused)
+                    Text(viewModel.message ?? "")
                 }
 
                 Spacer()
-                
                 //회원가입
                 VStack(spacing: 20){
                     Button {
-                        
+                        viewModel.signIn()
                     } label: {
                         Text("로그인")
                             .padding()
