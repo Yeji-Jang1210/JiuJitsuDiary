@@ -90,6 +90,8 @@ class AuthViewModel: ObservableObject {
     
     func signOut(){
         currentUser = nil
+        message = nil
+        isError = false
         do {
             try Auth.auth().signOut()
             isLoggedIn = false
