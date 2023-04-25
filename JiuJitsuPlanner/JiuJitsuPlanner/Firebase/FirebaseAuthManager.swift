@@ -13,22 +13,16 @@ import FirebaseDatabase
 import FirebaseStorage
 
 
-//final class FirebaseAuthManager {
-//
-//    static let shared = FirebaseAuthManager()
-//
-//    private init() {}
-//
-//    func createUser(email: String, password: String){
-//        Auth.auth().createUser(withEmail: email, password: password){ [weak self] authResult, error in
-//
-//        }
-//    }
-//
-//    func signIn(){}
-//
-//    func signOut(){}
-//}
+final class FirebaseAuthManager {
+
+    static let shared = FirebaseAuthManager()
+
+    private init() {}
+
+    func signIn(){}
+
+    func signOut(){}
+}
 
 class FirebaseStorageManager {
     

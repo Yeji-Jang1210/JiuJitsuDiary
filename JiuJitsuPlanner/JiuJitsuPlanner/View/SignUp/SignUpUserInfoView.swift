@@ -100,7 +100,7 @@ struct SignUpUserInfoView: View {
                             Text("생년월일")
                             TextField("yyyymmdd", text: $viewModel.birthday)
                                 .multilineTextAlignment(.trailing)
-                                .focused($focusField,equals: .birthday)
+                                .focused($focusField, equals: .birthday)
                                 .keyboardType(.numberPad)
                         }
                         Divider()

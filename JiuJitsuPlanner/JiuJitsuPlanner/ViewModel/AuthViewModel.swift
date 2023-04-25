@@ -18,19 +18,30 @@ class AuthViewModel: ObservableObject {
     @Published var currentUser: Firebase.User?
     @Published var email: String = ""
     @Published var password: String = ""
-    @Published var isAlertPresented: Bool = false
+    @Published var isError: Bool = false
     @Published var message: String?
+    @Published var isLoggedIn: Bool = false
     
-    let valiableLoginInfo: PassthroughSubject = PassthroughSubject<(String,String), Error>()
-    private var cancellbles: [AnyCancellable] = []
+    @Published var handle: AuthStateDidChangeListenerHandle?
     
     var title: String = "로그인 오류"
     
     init() {
         currentUser = Auth.auth().currentUser
+        handle = Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
+           if user != nil {
+               withAnimation {
+                   self?.isLoggedIn = true
+               }
+           }
+       }
     }
     
-    
+    deinit {
+        if let handle = handle {
+            Auth.auth().removeStateDidChangeListener(handle)
+        }
+    }
     
     func signIn(){
         if email.isEmpty {
@@ -60,12 +71,31 @@ class AuthViewModel: ObservableObject {
                     }
                 }
                 
-                self.currentUser = result?.user
+                if self.message != nil {
+                    self.isError = true
+                }
+                
+                if let user = result?.user {
+                    self.isError = false
+                    self.currentUser = user
+                    print(self.currentUser?.email! as Any)
+                }
             }
         }
         
         if self.message != nil {
-            self.isAlertPresented.toggle()
+            self.isError = true
         }
     }
+    
+    func signOut(){
+        currentUser = nil
+        do {
+            try Auth.auth().signOut()
+            isLoggedIn = false
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+    }
+    
 }

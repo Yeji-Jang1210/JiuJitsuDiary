@@ -19,7 +19,7 @@ struct JiuJitsuPlannerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
         }
     }
 }

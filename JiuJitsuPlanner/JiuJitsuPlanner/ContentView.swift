@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var viewModel: AuthViewModel = AuthViewModel()
+    @StateObject var viewModel: AuthViewModel = AuthViewModel()
     
     var body: some View {
-        if let user = viewModel.currentUser {
-            Text("Hello \(user.uid)")
-        } else {
-            LoginView()
-                .environmentObject(viewModel)
+        VStack{
+            if viewModel.isLoggedIn {
+                MainView()
+                    .transition(AnyTransition.slide.animation(.easeInOut))
+                
+            } else {
+                LoginView()
+                    .transition(AnyTransition.slide.animation(.easeInOut))
+                
+            }
         }
+        .environmentObject(viewModel)
     }
 }
 

@@ -25,6 +25,7 @@
 		B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470C299A02100072BB3D /* SignUpUserInfoView.swift */; };
 		B83C955F298A4CFF001113EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83C955E298A4CFF001113EF /* GoogleService-Info.plist */; };
 		B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862841729C17EFA00B082AA /* ConfettiView.swift */; };
+		B876039729F7935A00767858 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B876039629F7935A00767858 /* MainView.swift */; };
 		B8B67EBC29DC1AB50009272F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */; };
 		B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B80403299C74E8005AF13F /* PhotoPicker.swift */; };
 		B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F33298CEC770074DCA1 /* LoginView.swift */; };
@@ -61,6 +62,7 @@
 		B831470C299A02100072BB3D /* SignUpUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserInfoView.swift; sourceTree = "<group>"; };
 		B83C955E298A4CFF001113EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B862841729C17EFA00B082AA /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		B876039629F7935A00767858 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		B8B80403299C74E8005AF13F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		B8BB5F33298CEC770074DCA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -152,9 +154,9 @@
 		B83146E229924BAB0072BB3D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */,
 				B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */,
 				B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */,
-				B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 		B8B67EBD29DC4DF40009272F /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				B876039629F7935A00767858 /* MainView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */,
+				B876039729F7935A00767858 /* MainView.swift in Sources */,
 				B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */,
 				B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */,
 				B82E688029EE864600C2A2AA /* FirebaseAuthManager.swift in Sources */,

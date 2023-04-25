@@ -21,24 +21,16 @@ struct SignUpView: View {
             VStack {
                 switch viewModel.onboardingState {
                 case 0:
-                    withAnimation{
-                        SignUpIdView()
-                            .transition(.slide)
-                    }
+                    SignUpIdView()
+                        .transition(.slide)
                 case 1:
-                    withAnimation {
-                        SignUpPasswordView()
-                            .transition(.slide)
-                    }
+                    SignUpPasswordView()
+                        .transition(.slide)
                 case 2:
-                    withAnimation {
-                        SignUpUserInfoView()
-                            .transition(.slide)
-                    }
+                    SignUpUserInfoView()
+                        .transition(.slide)
                 case 3:
-                    withAnimation{
-                        SignUpCompleteView()
-                    }
+                    SignUpCompleteView()
                 default:
                     Text("No Title")
                 }
