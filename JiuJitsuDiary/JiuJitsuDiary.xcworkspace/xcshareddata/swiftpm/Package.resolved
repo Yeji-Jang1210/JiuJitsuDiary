@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "b6f62758f21a8c03cd64f4009c037cfa580a256e",
+        "version" : "7.9.1"
+      }
+    },
+    {
+      "identity" : "swiftpiechart",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ilamanov/SwiftPieChart",
+      "state" : {
+        "revision" : "e6f67120c55e7402f67f3463994105ff6cfbcd10",
+        "version" : "1.0.61"
+      }
+    },
+    {
+      "identity" : "swiftui-mediapicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/UWAppDev/SwiftUI-MediaPicker.git",
+      "state" : {
+        "revision" : "96f18b1350873dec0a76355c7060cd0a06100901",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

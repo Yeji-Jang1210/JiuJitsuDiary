@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		293D0CCB5BD8E6298F3B21B0 /* Pods_JiuJitsuDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68B98548EB6BC195AAE13E7 /* Pods_JiuJitsuDiary.framework */; };
+		B81B007A298A06DA00E677D3 /* JiuJitsuDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B0079298A06DA00E677D3 /* JiuJitsuDiaryApp.swift */; };
+		B81B007C298A06DA00E677D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B007B298A06DA00E677D3 /* ContentView.swift */; };
+		B81B007E298A06DB00E677D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B007D298A06DB00E677D3 /* Assets.xcassets */; };
+		B81B0081298A06DB00E677D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */; };
+		B82085D92A1CCE9700DFC310 /* UserEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82085D82A1CCE9700DFC310 /* UserEditViewModel.swift */; };
+		B82085DB2A1DD76800DFC310 /* UserEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82085DA2A1DD76800DFC310 /* UserEditView.swift */; };
+		B82D620529BB09F0001F3158 /* AnimationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620429BB09F0001F3158 /* AnimationSource.swift */; };
+		B82D620729BB0C90001F3158 /* UserInfoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D620629BB0C90001F3158 /* UserInfoStatus.swift */; };
+		B82E688029EE864600C2A2AA /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E687F29EE864600C2A2AA /* FirebaseStorageManager.swift */; };
+		B83146EA299356E10072BB3D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146E9299356E10072BB3D /* ButtonView.swift */; };
+		B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146ED29935F180072BB3D /* TextFieldView.swift */; };
+		B83146F0299366210072BB3D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146EF299366210072BB3D /* UserInfo.swift */; };
+		B83146F2299371F20072BB3D /* PasswordTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */; };
+		B83147062999F81F0072BB3D /* BaseSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83147052999F81F0072BB3D /* BaseSignUpView.swift */; };
+		B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83147082999FAAF0072BB3D /* SignUpIdView.swift */; };
+		B831470B2999FF7C0072BB3D /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */; };
+		B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831470C299A02100072BB3D /* SignUpUserInfoView.swift */; };
+		B832BFC12A4AC1CF009AF986 /* CustomMonthlyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832BFC02A4AC1CF009AF986 /* CustomMonthlyCalendar.swift */; };
+		B832BFC52A4ADCB6009AF986 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832BFC42A4ADCB6009AF986 /* Post.swift */; };
+		B83C955F298A4CFF001113EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83C955E298A4CFF001113EF /* GoogleService-Info.plist */; };
+		B83D7E9E2A5D1FBC008DA45E /* PostingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D7E9D2A5D1FBC008DA45E /* PostingImageView.swift */; };
+		B85155B22A4C1E7D00986D0F /* MainCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85155B12A4C1E7D00986D0F /* MainCalendarView.swift */; };
+		B85481872ADD6C5B009AA89E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85481862ADD6C5B009AA89E /* ForgotPasswordView.swift */; };
+		B854818B2ADD6EF5009AA89E /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854818A2ADD6EF5009AA89E /* ResetPasswordViewModel.swift */; };
+		B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B862841729C17EFA00B082AA /* ConfettiView.swift */; };
+		B876039729F7935A00767858 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B876039629F7935A00767858 /* MainView.swift */; };
+		B88F67252A836A2A00DF3327 /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = B88F67242A836A2A00DF3327 /* SwiftPieChart */; };
+		B89146692A70CDEC0075B80D /* PostingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89146682A70CDEC0075B80D /* PostingDetailView.swift */; };
+		B891466B2A70D1F20075B80D /* MainPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B891466A2A70D1F20075B80D /* MainPostsView.swift */; };
+		B89146712A70DF7D0075B80D /* JiuJitsuNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89146702A70DF7D0075B80D /* JiuJitsuNavigationView.swift */; };
+		B8935C462A0A303400A3DBA7 /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8935C452A0A303400A3DBA7 /* AchievementView.swift */; };
+		B8935C482A0A488100A3DBA7 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8935C472A0A488100A3DBA7 /* AchievementViewModel.swift */; };
+		B8935C4A2A0D1DA700A3DBA7 /* AchievementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8935C492A0D1DA700A3DBA7 /* AchievementListView.swift */; };
+		B8AA79B42A8BAAE20065C175 /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AA79B32A8BAAE20065C175 /* AddPostViewModel.swift */; };
+		B8B67EBC29DC1AB50009272F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */; };
+		B8B6CF342A5FDAE400A05758 /* CalendarTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B6CF332A5FDAE400A05758 /* CalendarTestView.swift */; };
+		B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B80403299C74E8005AF13F /* PhotoPicker.swift */; };
+		B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F33298CEC770074DCA1 /* LoginView.swift */; };
+		B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5F35299126B60074DCA1 /* SignUpView.swift */; };
+		B8BC5BA02A667D9F000CE296 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BC5B9F2A667D9F000CE296 /* MainTabView.swift */; };
+		B8BC5BA22A667F1E000CE296 /* CustomWeeklyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BC5BA12A667F1E000CE296 /* CustomWeeklyCalendarView.swift */; };
+		B8C2B71C2A53EDBD0064FDF4 /* RoundedStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2B71B2A53EDBD0064FDF4 /* RoundedStar.swift */; };
+		B8C2DD5F29A8889500FDF9F5 /* BeltUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */; };
+		B8C2DD6129A888BC00FDF9F5 /* Belt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6029A888BC00FDF9F5 /* Belt.swift */; };
+		B8C2DD6329ADE80B00FDF9F5 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */; };
+		B8C2DD6529B1F26200FDF9F5 /* SignUpCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */; };
+		B8C2DD6729B866EB00FDF9F5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */; };
+		B8C6F8CE29D5837B007358A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C6F8CD29D5837B007358A3 /* LoadingView.swift */; };
+		B8E22C252A4C42E4001EEC56 /* AddDailyPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E22C242A4C42E4001EEC56 /* AddDailyPostView.swift */; };
+		B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */; };
+		B8E5E06129A4D09F00C40B99 /* DefaultAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */; };
+		B8E5E06629A74DD300C40B99 /* BeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5E06529A74DD300C40B99 /* BeltView.swift */; };
+		B8FB99972ADD57050011C098 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B8FB99962ADD57050011C098 /* Kingfisher */; };
+		B8FC46CB2A8B48E60072BA8C /* MediaPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B8FC46CA2A8B48E60072BA8C /* MediaPicker */; };
+		B8FC46CD2A8B73B20072BA8C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC46CC2A8B73B20072BA8C /* MainViewModel.swift */; };
+		B8FFA8332A271BC80036ABF8 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA8322A271BC80036ABF8 /* UserInfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		092A3DA7495BBC8F43125D12 /* Pods-JiuJitsuDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiuJitsuDiary.release.xcconfig"; path = "Target Support Files/Pods-JiuJitsuDiary/Pods-JiuJitsuDiary.release.xcconfig"; sourceTree = "<group>"; };
+		23E5A5B39B056B63F9C022A4 /* Pods-JiuJitsuDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiuJitsuDiary.debug.xcconfig"; path = "Target Support Files/Pods-JiuJitsuDiary/Pods-JiuJitsuDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		A66D9D82DE7B4CDA2F4D53AF /* Pods-JiuJitsuPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiuJitsuPlanner.debug.xcconfig"; path = "Target Support Files/Pods-JiuJitsuPlanner/Pods-JiuJitsuPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B3AD0BE8AB3E2CDE14381AE6 /* Pods-JiuJitsuPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiuJitsuPlanner.release.xcconfig"; path = "Target Support Files/Pods-JiuJitsuPlanner/Pods-JiuJitsuPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		B81B0076298A06DA00E677D3 /* JiuJitsuDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiuJitsuDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81B0079298A06DA00E677D3 /* JiuJitsuDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiuJitsuDiaryApp.swift; sourceTree = "<group>"; };
+		B81B007B298A06DA00E677D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B81B007D298A06DB00E677D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B82085D82A1CCE9700DFC310 /* UserEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditViewModel.swift; sourceTree = "<group>"; };
+		B82085DA2A1DD76800DFC310 /* UserEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditView.swift; sourceTree = "<group>"; };
+		B82D620429BB09F0001F3158 /* AnimationSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSource.swift; sourceTree = "<group>"; };
+		B82D620629BB0C90001F3158 /* UserInfoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStatus.swift; sourceTree = "<group>"; };
+		B82E687F29EE864600C2A2AA /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		B83146E9299356E10072BB3D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B83146ED29935F180072BB3D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B83146EF299366210072BB3D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldView.swift; sourceTree = "<group>"; };
+		B83147052999F81F0072BB3D /* BaseSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpView.swift; sourceTree = "<group>"; };
+		B83147082999FAAF0072BB3D /* SignUpIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIdView.swift; sourceTree = "<group>"; };
+		B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
+		B831470C299A02100072BB3D /* SignUpUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserInfoView.swift; sourceTree = "<group>"; };
+		B832BFC02A4AC1CF009AF986 /* CustomMonthlyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMonthlyCalendar.swift; sourceTree = "<group>"; };
+		B832BFC42A4ADCB6009AF986 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B83C955E298A4CFF001113EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B83D7E9D2A5D1FBC008DA45E /* PostingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingImageView.swift; sourceTree = "<group>"; };
+		B85155B12A4C1E7D00986D0F /* MainCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalendarView.swift; sourceTree = "<group>"; };
+		B85481862ADD6C5B009AA89E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B854818A2ADD6EF5009AA89E /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		B862841729C17EFA00B082AA /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		B876039629F7935A00767858 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B89146682A70CDEC0075B80D /* PostingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingDetailView.swift; sourceTree = "<group>"; };
+		B891466A2A70D1F20075B80D /* MainPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostsView.swift; sourceTree = "<group>"; };
+		B89146702A70DF7D0075B80D /* JiuJitsuNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiuJitsuNavigationView.swift; sourceTree = "<group>"; };
+		B8935C452A0A303400A3DBA7 /* AchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
+		B8935C472A0A488100A3DBA7 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
+		B8935C492A0D1DA700A3DBA7 /* AchievementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementListView.swift; sourceTree = "<group>"; };
+		B8AA79B32A8BAAE20065C175 /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
+		B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B8B6CF332A5FDAE400A05758 /* CalendarTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTestView.swift; sourceTree = "<group>"; };
+		B8B80403299C74E8005AF13F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		B8BB5F33298CEC770074DCA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B8BB5F35299126B60074DCA1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B8BC5B9F2A667D9F000CE296 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B8BC5BA12A667F1E000CE296 /* CustomWeeklyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWeeklyCalendarView.swift; sourceTree = "<group>"; };
+		B8C2B71B2A53EDBD0064FDF4 /* RoundedStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedStar.swift; sourceTree = "<group>"; };
+		B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltUIController.swift; sourceTree = "<group>"; };
+		B8C2DD6029A888BC00FDF9F5 /* Belt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belt.swift; sourceTree = "<group>"; };
+		B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompleteView.swift; sourceTree = "<group>"; };
+		B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B8C6F8CD29D5837B007358A3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B8E22C242A4C42E4001EEC56 /* AddDailyPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDailyPostView.swift; sourceTree = "<group>"; };
+		B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltOptionButton.swift; sourceTree = "<group>"; };
+		B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertView.swift; sourceTree = "<group>"; };
+		B8E5E06529A74DD300C40B99 /* BeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeltView.swift; sourceTree = "<group>"; };
+		B8FC46CC2A8B73B20072BA8C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B8FFA8322A271BC80036ABF8 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		D68B98548EB6BC195AAE13E7 /* Pods_JiuJitsuDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiuJitsuDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B81B0073298A06DA00E677D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FB99972ADD57050011C098 /* Kingfisher in Frameworks */,
+				B88F67252A836A2A00DF3327 /* SwiftPieChart in Frameworks */,
+				B8FC46CB2A8B48E60072BA8C /* MediaPicker in Frameworks */,
+				293D0CCB5BD8E6298F3B21B0 /* Pods_JiuJitsuDiary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07347F588B004BBC1FB74D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D68B98548EB6BC195AAE13E7 /* Pods_JiuJitsuDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		139B32BC262D22E7521FADED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A66D9D82DE7B4CDA2F4D53AF /* Pods-JiuJitsuPlanner.debug.xcconfig */,
+				B3AD0BE8AB3E2CDE14381AE6 /* Pods-JiuJitsuPlanner.release.xcconfig */,
+				23E5A5B39B056B63F9C022A4 /* Pods-JiuJitsuDiary.debug.xcconfig */,
+				092A3DA7495BBC8F43125D12 /* Pods-JiuJitsuDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B81B006D298A06DA00E677D3 = {
+			isa = PBXGroup;
+			children = (
+				B81B0078298A06DA00E677D3 /* JiuJitsuDiary */,
+				B81B0077298A06DA00E677D3 /* Products */,
+				139B32BC262D22E7521FADED /* Pods */,
+				07347F588B004BBC1FB74D43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B81B0077298A06DA00E677D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81B0076298A06DA00E677D3 /* JiuJitsuDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81B0078298A06DA00E677D3 /* JiuJitsuDiary */ = {
+			isa = PBXGroup;
+			children = (
+				B8269B7F29E012D200F625DB /* Firebase */,
+				B83146F3299387F80072BB3D /* Service */,
+				B83146E329924BB80072BB3D /* Model */,
+				B83146E229924BAB0072BB3D /* ViewModel */,
+				B8BB5F32298CEC5D0074DCA1 /* View */,
+				B81B0079298A06DA00E677D3 /* JiuJitsuDiaryApp.swift */,
+				B81B007B298A06DA00E677D3 /* ContentView.swift */,
+				B83C955E298A4CFF001113EF /* GoogleService-Info.plist */,
+				B81B007D298A06DB00E677D3 /* Assets.xcassets */,
+				B81B007F298A06DB00E677D3 /* Preview Content */,
+			);
+			path = JiuJitsuDiary;
+			sourceTree = "<group>";
+		};
+		B81B007F298A06DB00E677D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B81B0080298A06DB00E677D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8269B7F29E012D200F625DB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B82E687F29EE864600C2A2AA /* FirebaseStorageManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B83146E229924BAB0072BB3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8B67EBB29DC1AB50009272F /* AuthViewModel.swift */,
+				B8C2DD6629B866EB00FDF9F5 /* SignUpViewModel.swift */,
+				B8FC46CC2A8B73B20072BA8C /* MainViewModel.swift */,
+				B8935C472A0A488100A3DBA7 /* AchievementViewModel.swift */,
+				B82085D82A1CCE9700DFC310 /* UserEditViewModel.swift */,
+				B8AA79B32A8BAAE20065C175 /* AddPostViewModel.swift */,
+				B8C2DD5E29A8889500FDF9F5 /* BeltUIController.swift */,
+				B854818A2ADD6EF5009AA89E /* ResetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B83146E329924BB80072BB3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B83146EF299366210072BB3D /* UserInfo.swift */,
+				B8C2DD6029A888BC00FDF9F5 /* Belt.swift */,
+				B832BFC42A4ADCB6009AF986 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B83146E6299251CB0072BB3D /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				B83146E9299356E10072BB3D /* ButtonView.swift */,
+				B83146ED29935F180072BB3D /* TextFieldView.swift */,
+				B83146F1299371F20072BB3D /* PasswordTextFieldView.swift */,
+				B83147052999F81F0072BB3D /* BaseSignUpView.swift */,
+				B8E5E06029A4D09F00C40B99 /* DefaultAlertView.swift */,
+				B8E5E06529A74DD300C40B99 /* BeltView.swift */,
+				B8E5E05E29A48A6C00C40B99 /* BeltOptionButton.swift */,
+				B8C6F8CD29D5837B007358A3 /* LoadingView.swift */,
+				B832BFC02A4AC1CF009AF986 /* CustomMonthlyCalendar.swift */,
+				B8BC5BA12A667F1E000CE296 /* CustomWeeklyCalendarView.swift */,
+				B89146702A70DF7D0075B80D /* JiuJitsuNavigationView.swift */,
+				B83D7E9D2A5D1FBC008DA45E /* PostingImageView.swift */,
+				B89146682A70CDEC0075B80D /* PostingDetailView.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		B83146F3299387F80072BB3D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B82D620629BB0C90001F3158 /* UserInfoStatus.swift */,
+				B8B80403299C74E8005AF13F /* PhotoPicker.swift */,
+				B8C2DD6229ADE80B00FDF9F5 /* AlertType.swift */,
+				B82D620429BB09F0001F3158 /* AnimationSource.swift */,
+				B862841729C17EFA00B082AA /* ConfettiView.swift */,
+				B8C2B71B2A53EDBD0064FDF4 /* RoundedStar.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83147072999F9B40072BB3D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B8BB5F35299126B60074DCA1 /* SignUpView.swift */,
+				B83147082999FAAF0072BB3D /* SignUpIdView.swift */,
+				B831470A2999FF7C0072BB3D /* SignUpPasswordView.swift */,
+				B831470C299A02100072BB3D /* SignUpUserInfoView.swift */,
+				B8C2DD6429B1F26200FDF9F5 /* SignUpCompleteView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B85155B32A4C414200986D0F /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				B8935C452A0A303400A3DBA7 /* AchievementView.swift */,
+				B8E22C242A4C42E4001EEC56 /* AddDailyPostView.swift */,
+			);
+			path = AddView;
+			sourceTree = "<group>";
+		};
+		B8B67EBD29DC4DF40009272F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B8BC5B9F2A667D9F000CE296 /* MainTabView.swift */,
+				B876039629F7935A00767858 /* MainView.swift */,
+				B85155B12A4C1E7D00986D0F /* MainCalendarView.swift */,
+				B891466A2A70D1F20075B80D /* MainPostsView.swift */,
+				B8FFA8322A271BC80036ABF8 /* UserInfoView.swift */,
+				B82085DA2A1DD76800DFC310 /* UserEditView.swift */,
+				B8935C492A0D1DA700A3DBA7 /* AchievementListView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B8BB5F32298CEC5D0074DCA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B85155B32A4C414200986D0F /* AddView */,
+				B8B67EBD29DC4DF40009272F /* MainView */,
+				B83146E6299251CB0072BB3D /* ViewModifier */,
+				B83147072999F9B40072BB3D /* SignUp */,
+				B8BB5F33298CEC770074DCA1 /* LoginView.swift */,
+				B8B6CF332A5FDAE400A05758 /* CalendarTestView.swift */,
+				B85481862ADD6C5B009AA89E /* ForgotPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B81B0075298A06DA00E677D3 /* JiuJitsuDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81B0084298A06DB00E677D3 /* Build configuration list for PBXNativeTarget "JiuJitsuDiary" */;
+			buildPhases = (
+				0E5D92AB1F53DE2F4C78E262 /* [CP] Check Pods Manifest.lock */,
+				B81B0072298A06DA00E677D3 /* Sources */,
+				B81B0073298A06DA00E677D3 /* Frameworks */,
+				B81B0074298A06DA00E677D3 /* Resources */,
+				AA45ACD0FF5AAC0785532DD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiuJitsuDiary;
+			packageProductDependencies = (
+				B88F67242A836A2A00DF3327 /* SwiftPieChart */,
+				B8FC46CA2A8B48E60072BA8C /* MediaPicker */,
+				B8FB99962ADD57050011C098 /* Kingfisher */,
+			);
+			productName = JiuJitsuPlanner;
+			productReference = B81B0076298A06DA00E677D3 /* JiuJitsuDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B81B006E298A06DA00E677D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B81B0075298A06DA00E677D3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B81B0071298A06DA00E677D3 /* Build configuration list for PBXProject "JiuJitsuDiary" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = B81B006D298A06DA00E677D3;
+			packageReferences = (
+				B88F67232A836A2A00DF3327 /* XCRemoteSwiftPackageReference "SwiftPieChart" */,
+				B8FC46C92A8B48E60072BA8C /* XCRemoteSwiftPackageReference "SwiftUI-MediaPicker" */,
+				B8FB99952ADD57050011C098 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = B81B0077298A06DA00E677D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B81B0075298A06DA00E677D3 /* JiuJitsuDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B81B0074298A06DA00E677D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81B0081298A06DB00E677D3 /* Preview Assets.xcassets in Resources */,
+				B81B007E298A06DB00E677D3 /* Assets.xcassets in Resources */,
+				B83C955F298A4CFF001113EF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E5D92AB1F53DE2F4C78E262 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiuJitsuDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA45ACD0FF5AAC0785532DD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiuJitsuDiary/Pods-JiuJitsuDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiuJitsuDiary/Pods-JiuJitsuDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JiuJitsuDiary/Pods-JiuJitsuDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B81B0072298A06DA00E677D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B80404299C74E8005AF13F /* PhotoPicker.swift in Sources */,
+				B8935C462A0A303400A3DBA7 /* AchievementView.swift in Sources */,
+				B876039729F7935A00767858 /* MainView.swift in Sources */,
+				B8E5E05F29A48A6C00C40B99 /* BeltOptionButton.swift in Sources */,
+				B83147092999FAAF0072BB3D /* SignUpIdView.swift in Sources */,
+				B854818B2ADD6EF5009AA89E /* ResetPasswordViewModel.swift in Sources */,
+				B82E688029EE864600C2A2AA /* FirebaseStorageManager.swift in Sources */,
+				B8E5E06129A4D09F00C40B99 /* DefaultAlertView.swift in Sources */,
+				B8C2B71C2A53EDBD0064FDF4 /* RoundedStar.swift in Sources */,
+				B89146692A70CDEC0075B80D /* PostingDetailView.swift in Sources */,
+				B83146EE29935F180072BB3D /* TextFieldView.swift in Sources */,
+				B832BFC12A4AC1CF009AF986 /* CustomMonthlyCalendar.swift in Sources */,
+				B8BC5BA22A667F1E000CE296 /* CustomWeeklyCalendarView.swift in Sources */,
+				B8C2DD5F29A8889500FDF9F5 /* BeltUIController.swift in Sources */,
+				B8AA79B42A8BAAE20065C175 /* AddPostViewModel.swift in Sources */,
+				B891466B2A70D1F20075B80D /* MainPostsView.swift in Sources */,
+				B85481872ADD6C5B009AA89E /* ForgotPasswordView.swift in Sources */,
+				B8BB5F36299126B60074DCA1 /* SignUpView.swift in Sources */,
+				B83146EA299356E10072BB3D /* ButtonView.swift in Sources */,
+				B82085DB2A1DD76800DFC310 /* UserEditView.swift in Sources */,
+				B832BFC52A4ADCB6009AF986 /* Post.swift in Sources */,
+				B831470B2999FF7C0072BB3D /* SignUpPasswordView.swift in Sources */,
+				B8B67EBC29DC1AB50009272F /* AuthViewModel.swift in Sources */,
+				B8E5E06629A74DD300C40B99 /* BeltView.swift in Sources */,
+				B8FFA8332A271BC80036ABF8 /* UserInfoView.swift in Sources */,
+				B8935C482A0A488100A3DBA7 /* AchievementViewModel.swift in Sources */,
+				B83146F0299366210072BB3D /* UserInfo.swift in Sources */,
+				B8C6F8CE29D5837B007358A3 /* LoadingView.swift in Sources */,
+				B8C2DD6729B866EB00FDF9F5 /* SignUpViewModel.swift in Sources */,
+				B8E22C252A4C42E4001EEC56 /* AddDailyPostView.swift in Sources */,
+				B82D620729BB0C90001F3158 /* UserInfoStatus.swift in Sources */,
+				B8BB5F34298CEC770074DCA1 /* LoginView.swift in Sources */,
+				B8B6CF342A5FDAE400A05758 /* CalendarTestView.swift in Sources */,
+				B831470D299A02100072BB3D /* SignUpUserInfoView.swift in Sources */,
+				B81B007C298A06DA00E677D3 /* ContentView.swift in Sources */,
+				B82D620529BB09F0001F3158 /* AnimationSource.swift in Sources */,
+				B862841829C17EFA00B082AA /* ConfettiView.swift in Sources */,
+				B83147062999F81F0072BB3D /* BaseSignUpView.swift in Sources */,
+				B8C2DD6329ADE80B00FDF9F5 /* AlertType.swift in Sources */,
+				B8C2DD6529B1F26200FDF9F5 /* SignUpCompleteView.swift in Sources */,
+				B85155B22A4C1E7D00986D0F /* MainCalendarView.swift in Sources */,
+				B83146F2299371F20072BB3D /* PasswordTextFieldView.swift in Sources */,
+				B8935C4A2A0D1DA700A3DBA7 /* AchievementListView.swift in Sources */,
+				B8C2DD6129A888BC00FDF9F5 /* Belt.swift in Sources */,
+				B8BC5BA02A667D9F000CE296 /* MainTabView.swift in Sources */,
+				B82085D92A1CCE9700DFC310 /* UserEditViewModel.swift in Sources */,
+				B89146712A70DF7D0075B80D /* JiuJitsuNavigationView.swift in Sources */,
+				B81B007A298A06DA00E677D3 /* JiuJitsuDiaryApp.swift in Sources */,
+				B83D7E9E2A5D1FBC008DA45E /* PostingImageView.swift in Sources */,
+				B8FC46CD2A8B73B20072BA8C /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B81B0082298A06DB00E677D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B81B0083298A06DB00E677D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B81B0085298A06DB00E677D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E5A5B39B056B63F9C022A4 /* Pods-JiuJitsuDiary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JiuJitsuDiary/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JiuJitsuDiary/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeji.JiuJitsuDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B81B0086298A06DB00E677D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092A3DA7495BBC8F43125D12 /* Pods-JiuJitsuDiary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JiuJitsuDiary/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JiuJitsuDiary/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeji.JiuJitsuDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B81B0071298A06DA00E677D3 /* Build configuration list for PBXProject "JiuJitsuDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81B0082298A06DB00E677D3 /* Debug */,
+				B81B0083298A06DB00E677D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81B0084298A06DB00E677D3 /* Build configuration list for PBXNativeTarget "JiuJitsuDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81B0085298A06DB00E677D3 /* Debug */,
+				B81B0086298A06DB00E677D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B88F67232A836A2A00DF3327 /* XCRemoteSwiftPackageReference "SwiftPieChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ilamanov/SwiftPieChart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B8FB99952ADD57050011C098 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+		B8FC46C92A8B48E60072BA8C /* XCRemoteSwiftPackageReference "SwiftUI-MediaPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/UWAppDev/SwiftUI-MediaPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B88F67242A836A2A00DF3327 /* SwiftPieChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B88F67232A836A2A00DF3327 /* XCRemoteSwiftPackageReference "SwiftPieChart" */;
+			productName = SwiftPieChart;
+		};
+		B8FB99962ADD57050011C098 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8FB99952ADD57050011C098 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B8FC46CA2A8B48E60072BA8C /* MediaPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8FC46C92A8B48E60072BA8C /* XCRemoteSwiftPackageReference "SwiftUI-MediaPicker" */;
+			productName = MediaPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B81B006E298A06DA00E677D3 /* Project object */;
+}
