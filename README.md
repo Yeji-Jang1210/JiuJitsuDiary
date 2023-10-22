@@ -1,4 +1,4 @@
-# JiuJitsuPlanner
+# JiuJitsuDiary
 
 ## 목차
 1. [SignUp](#signup)
