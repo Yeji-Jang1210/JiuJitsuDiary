@@ -22,7 +22,7 @@
 ![3](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/7189202c-f05d-4fce-b700-a22bc52fb5d7)
 
 - 회원가입이 정상적으로 이루어졌을 경우 바로 로그인 되어 어플을 사용할 수 있다.
-- Comfetti 효과를 사용하여 클릭했을 때 이모티콘들이 터지는재미있는 효과를 넣어보았다.
+- Confetti 효과를 사용하여 클릭했을 때 이모티콘들이 터지는재미있는 효과를 넣어보았다.
     
     ![Oct-17-2023 17-24-27](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/7e041a2e-e0f3-428a-8c43-ded25e706bd4)
 
