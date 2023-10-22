@@ -1,8 +1,8 @@
 # JiuJitsuPlanner
 
 ## 목차
-[1. SignUp](#signup)
-[2. MainView](#mainview)
+1. [SignUp](#signup)
+2. [MainView](#mainview)
 
 ## SignUp
 
