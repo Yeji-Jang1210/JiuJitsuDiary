@@ -4,6 +4,23 @@
 1. [SignUp](#signup)
 2. [MainView](#mainview)
 
+## 프로젝트 개요
+- 주짓수라는 운동을 처음 시작하면서 매번 다른 기술들을 배우는데 기술들이 많다보니 배웠던 기술을 잊어버리는 일이 종종 있곤 했었습니다. 그래서 그날그날 배웠던 기술들을 기록하는 어플이 있으면 좋겠다는 생각이 들었고, 같이 운동하는 언니에게 "주짓수만을 위해 기록하는 어플이 있으면 어떨까?" 라고 물어봤었을 때, 사진과 영상들과 함께 운동 시간과 운동하면서 있었던 일들을 기록하고 주짓수는 벨트 시스템이 있기 때문에 승급 할 때마다 승급 날짜를 기록 할 수 있는 기능도 있으면 좋겠다는 이야기를 나눴었습니다. 그렇게 나눈 이야기들을 기반으로 빈 도화지에 JiuJitsuDiary라는 첫 스케치를 시작했습니다.
+
+## 사용 스킬들
+---
+SwiftUI
+UIKit
+MVVM Pattern
+FSCalendar
+Firebase
+FirebaseAuth
+FirebaseStore
+FirebaseStorage
+Cocoapods
+Combine
+
+
 ## SignUp
 
 ---
