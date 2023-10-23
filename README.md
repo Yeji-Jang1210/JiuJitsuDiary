@@ -60,6 +60,11 @@ Combine
 
 ---
 
+<img width="366" alt="14" src="https://github.com/Yeji-Jang1210/JiuJitsuDiary/assets/62092491/437b7a37-b804-4baa-a78f-2c3930e36da9">
+
+MainView에는 4개의 TabView로 이루어져 있습니다.  
+
+### 1. Main View
 
 ![9](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/7b47eac7-4381-46f9-9250-2751ae5191b4)
 
@@ -95,6 +100,8 @@ Combine
         
 - 바로 추가 할 수 있도록 + 버튼을 통해 게시물 작성 View로 넘어가게 구현하였습니다.
 
+### 2. MainCalendarView
+
 ![10](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/2fa2208f-dc6a-41d2-aabb-3d549b616390)
 
 - 작성했던 포스트들을 통계로 내어 얼마나 운동 했는지 확인 할 수 있도록 구현(import Chart)
@@ -102,11 +109,14 @@ Combine
 - 클릭 시 작성했던 포스트들의 정보가 나오고 클릭했을 때 작성한 포스트를 디테일 하게 볼 수 있습니다.
 - 수정과 삭제도 바로 할 수 있도록 구현하였습니다.
 
-
+### 3. MainPostsView
 ![11](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/d94bf04b-2126-462e-af1b-39558128f593)
 
 - 작성했던 포스트들을 정렬하거나 필터링 하여 확인할 수 있습니다.
 - 이미지 클릭 시 각 포스트들을 디테일 하게 확인 할 수 있으며, 수정과 삭제도 가능합니다.
+
+
+### 4. UserInfoView
 
 ![8](https://github.com/Yeji-Jang1210/JiuJitsuPlanner/assets/62092491/806f89f3-3452-4582-99b9-4417957f4651)
 
