@@ -303,8 +303,8 @@ struct AddDailyPostView: View {
                     }))
                     .showLoadingView(isPresented: $isLoadingViewPresented,
                                      view: LoadingView(isShowing: $isLoadingViewPresented, text: "정보를 기록 하는 중 입니다."))
-                    .onChange(of: isReadyLoadingView) {
-                        if isReadyLoadingView {
+                    .onChange(of: isReadyLoadingView) { value in
+                        if value {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
                                 DispatchQueue.main.async {
                                     isLoadingViewPresented = true

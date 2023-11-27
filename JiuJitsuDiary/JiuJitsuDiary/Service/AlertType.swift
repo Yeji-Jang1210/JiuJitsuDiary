@@ -73,6 +73,7 @@ extension UIWindow {
     }
 }
 
+
 extension View {
     func alert(isPresented:Binding<Bool>, alert: DefaultAlertView) -> some View {
         let keyWindow = UIApplication.shared.connectedScenes
@@ -89,7 +90,7 @@ extension View {
         vc.definesPresentationContext = true
         
         return self.onChange(of: isPresented.wrappedValue){
-            if isPresented.wrappedValue {
+            if $0 {
                 keyWindow?.topViewController()?.present(vc, animated: true)
             }
             else{
@@ -113,7 +114,7 @@ extension View {
         vc.definesPresentationContext = true
         
         return self.onChange(of: isPresented.wrappedValue){
-            if isPresented.wrappedValue {
+            if $0 {
                 keyWindow?.topViewController()?.present(vc, animated: true)
             }
             else{

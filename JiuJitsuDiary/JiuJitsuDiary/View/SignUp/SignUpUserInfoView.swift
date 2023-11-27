@@ -157,11 +157,11 @@ struct SignUpUserInfoView: View {
                 isPresented = false
             }
         })
-        .onChange(of: viewModel.isSignUpSucceeded) {
+        .onChange(of: viewModel.isSignUpSucceeded) { _ in
             viewModel.onboardingState = 3
         }
         .onChange(of: isReadyLoadingView){
-            if isReadyLoadingView {
+            if $0 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
                     DispatchQueue.main.async{
                         viewModel.isLoadingViewPresented = true

@@ -102,8 +102,8 @@ struct BeltUI: View {
                     }
                     .padding(.trailing, 8)
                 }
-                .onChange(of: controller.belt.color) {
-                    controller.changeToBlackBeltOption(color: controller.belt.color)
+                .onChange(of: controller.belt.color) { color in
+                    controller.changeToBlackBeltOption(color: color)
                 }
                 .fixedSize()
             }.padding(.trailing,40)

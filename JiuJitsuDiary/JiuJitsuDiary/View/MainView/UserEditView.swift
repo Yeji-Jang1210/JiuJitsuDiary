@@ -208,14 +208,14 @@ struct UserEditView: View {
             UIApplication.shared.endEditing()
         }
         .onChange(of: isEditSucceeded){
-            if isEditSucceeded {
+            if $0 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
                     presentationMode.wrappedValue.dismiss()
                 }
             }
         }
         .onChange(of: isReadyLoadingView){
-            if isReadyLoadingView {
+            if $0 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
                     DispatchQueue.main.async {
                         UIApplication.shared.endEditing()
