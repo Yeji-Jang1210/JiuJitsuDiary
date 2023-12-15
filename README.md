@@ -14,13 +14,12 @@
 SwiftUI  
 UIKit  
 MVVM Pattern  
+Charts  
+Combine  
 FSCalendar  
 Firebase  
-FirebaseAuth  
-FirebaseStore  
-FirebaseStorage  
-Cocoapods  
-Combine  
+MediaPicker  
+PhotosUI  
 
 ## SignUp
 
