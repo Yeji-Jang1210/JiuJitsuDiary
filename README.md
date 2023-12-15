@@ -129,7 +129,7 @@ MainView에는 4개의 TabView로 이루어져 있습니다.
     - 주짓수의 벨트 시스템에서 검은띠를 제외한 다른 띠는 4그랄, 검은띠는 6그랄이고 검은띠는 프라타 부분의 색과 길이를 달리 표시해야 하는 필요가 있었음.
     - 여러 View에서 사용하기 때문에 분리가 필요
     
-    ![회원가입 View의 User정보 입력, 정보 수정에 들어가는 벨트 커스텀 View](https://prod-files-secure.s3.us-west-2.amazonaws.com/7e923ea2-f11f-487a-b272-c20816c1932e/dbc5e4cf-c75f-498f-b2dd-f6df9685db3d/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7.png)
+    ![회원가입 View의 User정보 입력, 정보 수정에 들어가는 벨트 커스텀 View](https://github.com/Yeji-Jang1210/JiuJitsuDiary/assets/62092491/a3905478-69f5-455a-a2a2-1ee1a1389607)
     
     회원가입 View의 User정보 입력, 정보 수정에 들어가는 벨트 커스텀 View
     
